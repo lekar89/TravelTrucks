@@ -1,0 +1,88 @@
+.form {
+  width: 100%;
+  padding: 44px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.description {
+  margin-bottom: 24px;
+
+  color: var(--color-gray);
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 18px;
+
+  color: var(--color-main);
+  background-color: var(--color-inputs);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  outline: none;
+
+  transition: border-color 250ms ease;
+}
+
+.input:focus {
+  border-color: var(--color-green);
+}
+
+.input::placeholder {
+  color: var(--color-gray);
+}
+
+.invalid {
+  border-color: var(--color-error);
+}
+
+.textarea {
+  min-height: 118px;
+  margin-bottom: 24px;
+
+  resize: vertical;
+}
+
+.error {
+  margin-top: 4px;
+
+  color: var(--color-error);
+
+  font-size: 13px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 166px;
+  min-height: 56px;
+  padding: 16px 40px;
+
+  color: var(--color-white);
+  background-color: var(--color-green);
+  border-radius: 200px;
+
+  font-weight: 500;
+
+  transition: background-color 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-green-hover);
+}

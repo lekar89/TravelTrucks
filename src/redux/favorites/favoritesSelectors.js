@@ -1,0 +1,1 @@
+export const selectFavoriteIds = state => state.favorites.items;
