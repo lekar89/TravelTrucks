@@ -104,3 +104,8 @@ npm run preview
 /catalog      Camper catalog
 /catalog/:id  Camper details page
 ```
+## Live Demo
+
+The application is deployed on Vercel:
+
+https://travel-trucks-zeta-olive.vercel.app/
