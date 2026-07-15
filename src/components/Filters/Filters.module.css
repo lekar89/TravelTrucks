@@ -179,3 +179,15 @@
     max-width: none;
   }
 }
+.locationIcon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  transform: translateY(-50%);
+  pointer-events: none;
+}

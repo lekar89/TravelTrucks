@@ -101,6 +101,28 @@
   color: var(--color-green);
 }
 
+.favoriteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  color: var(--color-main);
+  background-color: transparent;
+
+  transition:
+    color 250ms ease,
+    transform 250ms ease;
+}
+
+.favoriteButton:hover,
+.favoriteButton:focus {
+  color: var(--color-green);
+  transform: scale(1.08);
+}
+
 .meta {
   display: flex;
   align-items: center;
@@ -116,9 +138,7 @@
   color: var(--color-main);
 }
 
-.rating::first-letter {
-  color: var(--color-rating);
-}
+
 
 .reviews {
   margin-right: 12px;
@@ -188,4 +208,22 @@
   .imageWrapper {
     width: 100%;
   }
+}
+.rating,
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.metaIcon {
+  display: block;
+  flex-shrink: 0;
+}
+
+.heartIcon {
+  display: block;
+  transition:
+    color 250ms ease,
+    fill 250ms ease;
 }

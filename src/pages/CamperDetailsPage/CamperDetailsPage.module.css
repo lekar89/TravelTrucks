@@ -29,12 +29,18 @@
   margin-bottom: 16px;
 }
 
-.rating {
+.rating,
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
   color: var(--color-main);
 }
 
-.rating::first-letter {
-  color: var(--color-rating);
+.metaIcon {
+  display: block;
+  flex-shrink: 0;
 }
 
 .reviewsCount {

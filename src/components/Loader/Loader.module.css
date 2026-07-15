@@ -1,28 +1,95 @@
-.wrapper {
+.overlay {
+  position: fixed;
+  z-index: 1000;
+  inset: 72px 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background-color: rgb(16 24 40 / 35%);
+  backdrop-filter: blur(2px);
+}
+
+.modal {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  min-height: 300px;
+  width: min(720px, 100%);
+  min-height: 390px;
+  padding: 56px 40px;
 
-  color: var(--color-text);
+  background-color: var(--color-white);
+  border-radius: 32px;
+  box-shadow: 0 16px 48px rgb(16 24 40 / 18%);
+
+  text-align: center;
 }
 
-.loader {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 16px;
+.spinner {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 44px;
 
-  border: 5px solid var(--color-badges);
-  border-top-color: var(--color-green);
+  border: 8px solid var(--color-inputs);
+  border-top-color: var(--color-green-hover);
   border-radius: 50%;
 
   animation: spin 800ms linear infinite;
 }
 
+.title {
+  margin-bottom: 24px;
+
+  color: var(--color-main);
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.description {
+  color: var(--color-main);
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    inset: 72px 0 0;
+    padding: 20px;
+  }
+
+  .modal {
+    min-height: 320px;
+    padding: 40px 20px;
+    border-radius: 24px;
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 32px;
+    border-width: 6px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 17px;
   }
 }
