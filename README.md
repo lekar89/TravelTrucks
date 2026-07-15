@@ -50,7 +50,7 @@ GET /campers/:id
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/lekar89/TravelTrucks.git
 ```
 
 Go to the project directory:
